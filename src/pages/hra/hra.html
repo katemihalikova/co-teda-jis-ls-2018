@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Co sníš?</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="top">
+    <img src="assets/imgs/{{jidlo.obrazek}}" alt="{{jidlo.nazev}}" *ngFor="let jidlo of jidla" (click)="kliknutoNaJidlo(jidlo)">
+  </div>
+
+  <div class="bottom">
+    <img src="assets/imgs/talir.png" class="pozadi">
+    <div class="talir">
+      <img src="assets/imgs/{{jidlo.obrazek}}" alt="{{jidlo.nazev}}" *ngFor="let jidlo of presunutajidla">
+    </div>
+  </div>
+
+  <div class="gameover" [ngClass]="{zobrazeno: gameoverZobrazeno == true}">
+    <img src="assets/imgs/gameover.png">
+  </div>
+
+  <div class="vyhra" [ngClass]="{zobrazeno: vyhraZobrazeno == true}">
+    <img src="assets/imgs/vyhra.png">
+  </div>
+
+</ion-content>

@@ -1,14 +1,31 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Co teda jíš?
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-list>
+    <ion-item class="nesmim">
+      Nesmím:
+    </ion-item>
+    <ion-item>
+      <ion-label>Lepek</ion-label>
+      <ion-checkbox [(ngModel)]="lepekzaskrtnuty"></ion-checkbox>
+      <img src="assets/imgs/bez_lepku.png" item-end class="ikonka">
+    </ion-item>
+    <ion-item>
+      <ion-label>Laktóza</ion-label>
+      <ion-checkbox [(ngModel)]="laktozazaskrtnuta"></ion-checkbox>
+      <img src="assets/imgs/bez_laktozy.png" item-end class="ikonka">
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full (click)="jdinadalsi()">Hraj!</button>
+
+  <img src="assets/imgs/boy.png" class="deti">
+
+  <div class="poznamka">V aplikaci jsou použity “<a href="https://commons.wikimedia.org/wiki/Category:Twemoji_v2" target="_blank">Twemoji</a>” vytvořené <a href="https://about.twitter.com/" target="_blank">Twitterem</a> pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank">CC BY 4.0 International</a>.</div>
 </ion-content>

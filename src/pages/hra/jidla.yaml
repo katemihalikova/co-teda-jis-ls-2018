@@ -1,0 +1,39 @@
+Fastfood:
+  pozadi: fastfood.jpg
+  jidla:
+    - nazev: Pizza
+      obrazek: Twemoji2_1f355.svg
+      laktoza: obsahuje
+      lepek: obsahuje
+    - nazev: Hranolky
+      obrazek: Twemoji2_1f35f.svg
+      lepek: neobsahuje
+      laktoza: neobsahuje
+    - nazev: Salát bez zálivky
+      obrazek: Twemoji2_1f957.svg
+      lepek: neobsahuje
+      laktoza: neobsahuje
+    - nazev: Nugetky
+      obrazek: Twemoji2_1f357.svg
+      lepek: obsahuje
+      laktoza: neobsahuje
+    - nazev: Hamburger
+      obrazek: Twemoji2_1f354.svg
+      lepek: obsahuje
+      laktoza: obsahuje
+    - nazev: Hot Dog
+      obrazek: Twemoji2_1f32d.svg
+      lepek: obsahuje
+      laktoza: neobsahuje
+    - nazev: Tortilla
+      obrazek: Twemoji2_1f32f.svg
+      lepek: obsahuje
+      laktoza: obsahuje
+    - nazev: Zmrzlina
+      obrazek: Twemoji2_1f368.svg
+      lepek: neobsahuje
+      laktoza: obsahuje
+    - nazev: Sendvič
+      obrazek: Twemoji2_1f96a.svg
+      lepek: obsahuje
+      laktoza: obsahuje

@@ -1,0 +1,58 @@
+page-hra {
+  .top {
+    flex: 0 1 75vh;
+
+    img {
+      width: 30vmin;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10%;
+      padding: 4vmin;
+      margin: 1.5vmin;
+    }
+  }
+
+  .bottom {
+    flex: 0 0 25vh;
+    position: relative;
+
+    .pozadi {
+      bottom: 0;
+      height: 25vh;
+      position: absolute;
+      left: calc(50% - 12.5vh);
+    }
+  }
+
+  .scroll-content {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/imgs/ubrus.png");
+  }
+
+  .gameover,
+  .vyhra {
+    position: absolute;
+    background-color: rgba(39, 39, 39, 0.75);
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+
+  .gameover.zobrazeno,
+  .vyhra.zobrazeno {
+    display: block;
+  }
+
+  .talir {
+    position: absolute;
+    left: calc(50% - 6vh);
+    width: 12vh;
+    height: 100%;
+    top: 0;
+
+    img {
+      width: 40%;
+      margin: 5%;
+    }
+  }
+}
